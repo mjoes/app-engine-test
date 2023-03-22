@@ -3,11 +3,6 @@ on:
     branches:
     - 'main'
 
-env:
-  PROJECT_ID: ${{ secrets.GCP }}
-  GCE_INSTANCE: john-peel  # TODO: update to instance name
-  GCE_INSTANCE_ZONE: europe-north1-a   # TODO: update to instance zone
-
 jobs:
   cloudssh:
     name: Cloud ssh
@@ -29,8 +24,8 @@ jobs:
     - id: 'compute-ssh'
       uses: 'google-github-actions/ssh-compute@v0'
       with:
-        instance_name: $GCE_INSTANCE
-        zone: $GCE_INSTANCE_ZONE
+        instance_name: john-peel
+        zone: europe-north1-a
         ssh_private_key: '${{ secrets.PRIVATE_SSH }}'
         command: 'echo Hello world'
 
