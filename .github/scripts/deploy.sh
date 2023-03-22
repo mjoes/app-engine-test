@@ -1,5 +1,5 @@
 sudo systemctl stop apptest.service
-sudo cd /home/johnpeel/app-engine-test/
+cd /home/johnpeel/app-engine-test/
 sudo git config --global --add safe.directory /home/johnpeel/app-engine-test
 sudo git pull
 sudo pip3 install --upgrade -r requirements.txt
