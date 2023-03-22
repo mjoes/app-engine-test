@@ -27,7 +27,7 @@ jobs:
         instance_name: john-peel
         zone: europe-north1-a
         ssh_private_key: '${{ secrets.PRIVATE_SSH }}'
-        command: 'echo Hello world'
+        script: ./.github/scripts/deploy.sh
 
     # Example of using the output
     - id: 'test'
