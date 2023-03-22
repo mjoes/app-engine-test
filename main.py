@@ -9,3 +9,6 @@ def function_test():
         time.sleep(1)
         logging.info(f"logging {k}")
         print(f"test print no: {k}")
+
+if __name__ == '__main__':
+    function_test()
