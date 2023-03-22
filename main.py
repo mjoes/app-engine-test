@@ -9,7 +9,7 @@ for blob in bucket.list_blobs(prefix='auphonic/'):
         pass
     else:
         print(blob.name)
-
+print("DONE")
 
 # def function_test():
 #     i=0
