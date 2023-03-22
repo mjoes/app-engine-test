@@ -8,7 +8,7 @@ def function_test():
     while i < 10:
         k=k+1
         time.sleep(1)
-        logging.info(f"logging {k}")
+        logging.error(f"logging {k}")
         print(f"test print no: {k}")
 
 function_test()
