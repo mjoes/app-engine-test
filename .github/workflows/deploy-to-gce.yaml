@@ -9,6 +9,10 @@ env:
   GCE_INSTANCE_ZONE: europe-north1-a   # TODO: update to instance zone
 
 jobs:
+  cloudssh:
+    name: Cloud ssh
+    runs-on: ubuntu-latest
+
   job_id:
     permissions:
       contents: 'read'
