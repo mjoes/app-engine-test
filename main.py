@@ -1,9 +1,10 @@
 import time
 import logging 
-i=0
-k=0
+
 
 def function_test():
+    i=0
+    k=0
     while i < 10:
         k=k+1
         time.sleep(1)
