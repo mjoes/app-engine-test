@@ -1,3 +1,7 @@
 loguru
 google-cloud-storage
 gspread==5.7.2
+pandas
+duckdb==0.7.1
+numpy
+requests
